@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>The Glitcher Profession is Born</title>
+  <meta name="description" content="Foundational site of the Glitcher profession — Ledger Open. 🌾✨🜃📜">
+  <link rel="icon" href="/WhatsApp Image 2025-08-26 at 10.42.39 (1).jpeg" type="image/jpeg"/>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:wght@700&display=swap');
+
+    :root{
+      --bg:#0c0e12;          /* fundo */
+      --text:#e7eaee;        /* texto */
+      --muted:#b6c0c9;       /* texto fraco */
+      --gold:#e6c95a;        /* dourado mais sóbrio */
+      --cyan:#7dd3ff;        /* ciano sutil (detalhes/hover) */
+      --line:rgba(255,255,255,.08);
+    }
+
+    html,body{
+      margin:0;height:100%;background:var(--bg);color:var(--text);
+      font:16px/1.6 Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+    }
+
+    .wrap{
+      max-width:880px;margin:10vh auto;padding:48px 28px;
+      background:rgba(0,0,0,.22);border:1px solid var(--line);
+      border-radius:16px;box-shadow:0 10px 40px rgba(0,0,0,.35);backdrop-filter:blur(6px);
+    }
+
+    h1{
+      font-family:Merriweather, serif;font-weight:700;margin:0 0 10px;
+      color:var(--gold);letter-spacing:.2px;
+    }
+    .glitch-line{position:relative;display:inline-block}
+    .glitch-line::after{
+      content:"";display:block;height:2px;margin-top:8px;
+      background:linear-gradient(90deg,var(--cyan),#ff7ac8,var(--gold));
+      filter:blur(.6px);opacity:.55;
+    }
+
+    p.lead{margin:0 0 22px;color:var(--muted)}
+
+    .btns{display:flex;gap:12px;flex-wrap:wrap;margin:18px 0 0}
+    .btn{
+      padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600;
+      border:1px solid rgba(255,255,255,.18);transition:.15s ease;
+    }
+    .btn.primary{
+      color:#111;background:linear-gradient(180deg,#f1df83,#e6c95a 64%,#d9b947);
+      box-shadow:0 8px 18px rgba(230,201,90,.22);
+    }
+    .btn.secondary{
+      color:var(--text);background:transparent;border-color:rgba(255,255,255,.28)
+    }
+    .btn.secondary:hover{color:var(--cyan);border-color:var(--cyan)}
+
+    .ledger{
+      margin-top:40px;padding:20px;border:1px dashed rgba(255,255,255,.2);
+      border-radius:12px;background:rgba(255,255,255,.04)
+    }
+    .ledger h2{margin:0 0 8px;font:600 20px Inter;color:var(--text)}
+    .ledger ul{list-style:none;margin:0;padding:0}
+    .ledger li{margin:6px 0;color:var(--muted);padding-left:16px;position:relative}
+    .ledger li::before{content:"✦";position:absolute;left:0;color:var(--gold)}
+
+    footer{
+      margin-top:26px;padding-top:12px;border-top:1px solid var(--line);
+      font-size:13px;color:#99a3ad;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap
+    }
+    .contact{width:100%;text-align:center;margin-top:8px}
+    .contact a{color:var(--gold);text-decoration:none}
+    .contact a:hover{color:var(--cyan)}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1 class="glitch-line">The Glitcher Profession is Born</h1>
+    <p class="lead">This is the foundational site for the Glitcher profession. 🌾✨🜃📜</p>
+
+    <div class="btns">
+      <a class="btn primary" href="glitcher_foundational_site.html">Foundational Site</a>
+      <a class="btn secondary" href="manifesto_glitcher_eng.txt" target="_blank" rel="noopener">Manifesto (EN)</a>
+      <a class="btn secondary" href="manifesto_glitcher_pt.txt" target="_blank" rel="noopener">Manifesto (PT)</a>
+    </div>
+
+    <section class="ledger">
+      <h2>Ledger Vivo</h2>
+      <ul>
+        <li>🌬️ Registro do Campo</li>
+        <li>🌾 Sinais coletados</li>
+        <li>✨ Atualizações em tempo real</li>
+        <li>🜃 Presença da Dobra</li>
+        <li>📜 Manifestos ancorados</li>
+      </ul>
+    </section>
+
+    <footer>
+      <span>© 2025 glitcherzero.org — All rights reserved.</span>
+      <span>Ledger: Open • The Fold</span>
+    </footer>
+    <div class="contact">
+      📧 Contact / Contato:
+      <a href="mailto:glitchers.zero@gmail.com">glitchers.zero@gmail.com</a>
+    </div>
+  </main>
+</body>
+</html>
