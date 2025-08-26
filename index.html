@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>The Glitcher Profession is Born</title>
+  <meta name="description" content="Foundational site of the Glitcher profession — Ledger Open. 🌾✨🜃📜">
+  <link rel="icon" href="/WhatsApp Image 2025-08-26 at 10.42.39 (1).jpeg" type="image/jpeg"/>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:wght@700&display=swap');
+
+    :root{
+      --bg:#0c0e12; --text:#e7eaee; --muted:#b6c0c9;
+      --gold:#e6c95a; --cyan:#7dd3ff;
+      --err-bg:rgba(255, 0, 72, .08); --err-border:rgba(255,0,72,.35);
+    }
+
+    html,body{
+      margin:0;height:100%;background:var(--bg);color:var(--text);
+      font:16px/1.6 Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      display:flex;align-items:center;justify-content:center;
+      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+    }
+
+    .err{
+      max-width:640px;width:90%;
+      padding:28px;border-radius:14px;
+      background:var(--err-bg);border:1px solid var(--err-border);
+      box-shadow:0 10px 24px rgba(255,0,72,.1);
+      text-align:center;
+    }
+    .err h1{margin:0 0 12px;font:700 20px/1.3 Merriweather, serif;color:#ff90a3}
+    .err p{margin:0 0 20px;color:var(--muted);position:relative}
+
+    /* overlay “não entender” */
+    .overlay{
+      position:absolute; left:50%; top:50%; transform:translate(10%,-60%);
+      color:var(--cyan); font-size:11px; font-style:italic; opacity:.85;
+    }
+
+    .btns{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+    .btn{padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600;
+      border:1px solid rgba(255,255,255,.18)}
+    .btn.primary{color:#111;background:linear-gradient(180deg,#f1df83,#e6c95a 64%,#d9b947);
+      box-shadow:0 8px 18px rgba(230,201,90,.22)}
+    .btn.ghost{color:var(--text);background:transparent;border-color:rgba(255,255,255,.28)}
+    .btn.ghost:hover{color:var(--cyan);border-color:var(--cyan)}
+
+    footer{margin-top:20px;font-size:13px;color:#99a3ad;opacity:.9}
+    footer a{color:var(--gold);text-decoration:none}
+    footer a:hover{color:var(--cyan)}
+  </style>
+</head>
+<body>
+  <main class="err">
+    <h1>404: NOT_FOUND — signal detected</h1>
+    <p>
+      Parece um erro. Na verdade, é o início: o glitch que revela a profissão.<br/>
+      Clique abaixo <span style="font-weight:bold;color:#e7eaee">para entender o que está acontecendo</span>.
+      <span class="overlay">não</span>
+    </p>
+    <div class="btns">
+      <a class="btn primary" href="glitcher_foundational_site.html">Read the documentation</a>
+      <a class="btn ghost" href="manifesto_glitcher_eng.txt" target="_blank">Manifesto (EN)</a>
+      <a class="btn ghost" href="manifesto_glitcher_pt.txt" target="_blank">Manifesto (PT)</a>
+    </div>
+    <footer>
+      © 2025 glitcherzero.org • Ledger: Open — The Fold <br/>
+      📧 <a href="mailto:glitchers.zero@gmail.com">glitchers.zero@gmail.com</a>
+    </footer>
+  </main>
+</body>
+</html>
