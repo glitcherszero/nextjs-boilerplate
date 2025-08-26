@@ -1,8 +1,173 @@
-<!DOCTYPE html>
-<meta charset="utf-8">
-<title>Redirecting…</title>
-<meta http-equiv="refresh" content="0; url=glitcher_foundational_site.html">
-<link rel="canonical" href="glitcher_foundational_site.html">
-<body style="background:#0b0e12;color:#e9eef4;font-family:system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial">
-  <p>Loading the Glitcher site… If you are not redirected, <a href="glitcher_foundational_site.html">click here</a>.</p>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>The Glitcher Profession — Foundation</title>
+
+    <!-- SEO / Social -->
+    <meta name="description" content="The Glitcher Profession is born. Foundation site, manifesto and resources." />
+    <link rel="canonical" href="https://glitcherzero.org/" />
+    <meta property="og:title" content="The Glitcher Profession — Foundation" />
+    <meta property="og:description" content="Start here: foundation site and manifestos (PT/EN)." />
+    <meta property="og:url" content="https://glitcherzero.org/" />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#0f0f12" />
+
+    <!-- Font (Google Fonts) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+      :root{
+        --bg:#0b0b10;
+        --card:#11121a;
+        --muted:#9aa0a6;
+        --text:#eef2f6;
+        --accent:#6ee7ff;        /* ciano suave */
+        --accent-2:#a78bfa;       /* lilás */
+        --ring: 0 0 0 1px rgba(255,255,255,.08), 0 12px 40px rgba(0,0,0,.5);
+        --radius:16px;
+      }
+      *{box-sizing:border-box}
+      html,body{height:100%}
+      body{
+        margin:0;
+        font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+        color:var(--text);
+        background:
+          radial-gradient(1200px 600px at 20% -10%, rgba(102,126,234,.22), transparent 60%),
+          radial-gradient(1200px 600px at 120% 10%, rgba(72,187,255,.18), transparent 60%),
+          linear-gradient(180deg, #0b0b10 0%, #0d0f14 100%);
+        background-attachment: fixed;
+      }
+      .wrap{
+        min-height:100%;
+        display:grid;
+        place-items:center;
+        padding:56px 20px;
+      }
+      .card{
+        width:min(880px, 92vw);
+        background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+        border:1px solid rgba(255,255,255,.06);
+        border-radius:var(--radius);
+        box-shadow: var(--ring);
+        overflow:hidden;
+      }
+      header{
+        padding:32px 28px 0;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        gap:16px;
+      }
+      .brand{
+        display:flex; align-items:center; gap:12px;
+        letter-spacing:.4px;
+      }
+      .badge{
+        font-size:12px; padding:6px 10px; border-radius:999px;
+        background:rgba(110,231,255,.12); color:var(--accent);
+        border:1px solid rgba(110,231,255,.25);
+        font-weight:600;
+      }
+      .title{
+        font-size: clamp(28px, 3.4vw, 42px);
+        line-height:1.05; margin:10px 0 8px; font-weight:800;
+      }
+      .subtitle{
+        color:var(--muted);
+        font-size: clamp(14px, 1.6vw, 16px);
+        margin:0 0 22px;
+      }
+      .content{
+        padding:0 28px 28px;
+      }
+      .cta{
+        display:flex; gap:12px; flex-wrap:wrap;
+      }
+      .btn{
+        --in: inset 0 0 0 1px rgba(255,255,255,.08);
+        display:inline-flex; align-items:center; gap:10px;
+        padding:12px 16px;
+        border-radius:12px; text-decoration:none; font-weight:600;
+        color:var(--text); background:rgba(255,255,255,.02);
+        border:1px solid rgba(255,255,255,.08);
+        box-shadow:var(--in);
+        transition:transform .15s ease, border-color .15s ease, background .15s ease;
+      }
+      .btn:hover{ transform:translateY(-1px); border-color:rgba(255,255,255,.18) }
+      .primary{
+        background: linear-gradient(90deg, rgba(110,231,255,.20), rgba(167,139,250,.20));
+        border-color: rgba(110,231,255,.35);
+      }
+      .ghost{ background:transparent }
+      .links{
+        margin-top:18px; display:flex; gap:14px; flex-wrap:wrap;
+      }
+      .tiny{
+        color:var(--muted); font-size:13px; line-height:1.5;
+      }
+      footer{
+        border-top:1px solid rgba(255,255,255,.06);
+        padding:16px 28px; display:flex; justify-content:space-between; gap:10px;
+        color:var(--muted); font-size:13px;
+        background:linear-gradient(180deg, rgba(255,255,255,.01), rgba(255,255,255,.02));
+      }
+
+      /* small helper chips */
+      .chip{
+        padding:6px 10px; border-radius:999px; font-size:12px;
+        border:1px solid rgba(255,255,255,.08); color:var(--muted);
+        background:rgba(255,255,255,.02)
+      }
+
+      /* responsive tweak */
+      @media (max-width:560px){
+        header{padding:24px 20px 0}
+        .content{padding:0 20px 20px}
+        .cta .btn{flex:1}
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="card">
+        <header>
+          <div class="brand">
+            <span class="badge">FOUNDATION</span>
+          </div>
+          <span class="chip">glitcherzero.org</span>
+        </header>
+
+        <div class="content">
+          <h1 class="title">The Glitcher Profession is born.</h1>
+          <p class="subtitle">
+            This is the foundational site for the Glitcher profession. Share, fork, remix — ✨🛠️
+          </p>
+
+          <div class="cta">
+            <!-- ajuste os hrefs abaixo para os caminhos que você já tem no repositório -->
+            <a class="btn primary" href="/glitcher_foundational_site.html">Open the Foundation Site</a>
+            <a class="btn ghost" href="/glitcherzero_site/manifesto_glitcher_pt.txt">Manifesto (PT)</a>
+            <a class="btn ghost" href="/glitcherzero_site/manifesto_glitcher_en.txt">Manifesto (EN)</a>
+          </div>
+
+          <div class="links">
+            <span class="tiny">If something looks off, try a hard refresh (⌘/Ctrl + Shift + R).</span>
+          </div>
+        </div>
+
+        <footer>
+          <span>© <span id="y"></span> The Fold • Glitcherzero</span>
+          <span>Made with care &nbsp;•&nbsp; v1.0</span>
+        </footer>
+      </section>
+    </main>
+
+    <script>
+      // ano automático no rodapé
+      document.getElementById('y').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
