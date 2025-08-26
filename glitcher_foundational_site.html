@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  <title>The Glitcher Profession is born.</title>
+  <meta name="description" content="This is the foundational site for the Glitcher profession.">
+
+  <!-- Favicon também aqui (para após o redirect) -->
+  <link rel="icon" href="/WhatsApp Image 2025-08-26 at 10.42.39 (1).jpeg" type="image/jpeg" />
+
+  <!-- Estilo: painel neutro + glitch no pano de fundo -->
+  <style>
+    :root{
+      --bg-dark:#0c0e12;
+      --text:#eaeaea;
+      --muted:#b8c0c8;
+      --accent:#ffdb3a;
+      --link:#ffe16b;
+    }
+    html,body{
+      height:100%; margin:0;
+      background: radial-gradient(1200px 600px at 50% 40%, rgba(120,220,255,0.12), transparent 60%),
+                  radial-gradient(900px 500px at 15% 80%, rgba(255,120,200,0.10), transparent 60%),
+                  radial-gradient(900px 500px at 85% 80%, rgba(255,220,120,0.10), transparent 60%),
+                  var(--bg-dark);
+      color:var(--text);
+      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Inter, "DejaVu Sans", Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .wrap{
+      max-width: 880px;
+      margin: 6vh auto;
+      padding: 40px 28px;
+      background: rgba(0,0,0,0.25);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.35);
+      backdrop-filter: blur(6px);
+    }
+    h1{
+      margin:0 0 8px;
+      font-size: clamp(28px, 5vw, 44px);
+      letter-spacing: 0.2px;
+      color: var(--text);
+      text-shadow: 0 0 18px rgba(255,219,58,0.15);
+    }
+    p.lead{
+      margin: 0 0 22px;
+      color: var(--muted);
+    }
+    .btns{
+      display:flex; gap:12px; flex-wrap:wrap; margin: 18px 0 0;
+    }
+    .btn{
+      display:inline-block;
+      padding: 10px 14px;
+      border-radius: 10px;
+      border:1px solid rgba(255,255,255,0.18);
+      text-decoration:none;
+      color:#121417;
+      background: linear-gradient(180deg, #ffe56e, #ffd640 65%, #ffc915);
+      box-shadow: 0 8px 18px rgba(255,219,58,0.25);
+      font-weight:600;
+    }
+    .btn.secondary{
+      color: var(--text);
+      background: transparent;
+      border-color: rgba(255,255,255,0.28);
+      box-shadow:none;
+    }
+    a{ color: var(--link); text-decoration: none; }
+    a:hover{ text-decoration: underline; }
+    footer{
+      margin-top: 26px;
+      font-size: 13px;
+      color: #9aa4af;
+      display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;
+      opacity:.9;
+    }
+    /* glitch underline suave */
+    .glitch::after{
+      content:"";
+      display:block; height:2px; margin-top:6px;
+      background: linear-gradient(90deg, #7ae1ff, #ff7ac8, #ffdb3a);
+      filter: blur(0.6px); opacity:.65;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1 class="glitch">The Glitcher Profession is born.</h1>
+    <p class="lead">This is the foundational site for the Glitcher profession. 🌾✨🜃📜</p>
+
+    <div class="btns">
+      <a class="btn" href="manifesto_glitcher_eng.txt" target="_blank" rel="noopener">Manifesto (EN)</a>
+      <a class="btn" href="manifesto_glitcher_pt.txt" target="_blank" rel="noopener">Manifesto (PT)</a>
+      <a class="btn secondary" href="https://glitcherzero.org" rel="noopener">Home</a>
+    </div>
+
+    <footer>
+      <span>© 2025 glitcherzero.org — All rights reserved.</span>
+      <span>Ledger: Open • The Fold</span>
+    </footer>
+  </main>
+</body>
+</html>
